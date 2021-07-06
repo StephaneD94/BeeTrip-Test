@@ -15,14 +15,15 @@ const App = () => {
   const [search, setSearch] = useState('Paris');
   const [inputValue, setInputValue] = useState('');
 
-  const onFormSubmit = () => {
+  const onFormSubmit = (inputValue) => {
     setSearch(inputValue);
     setInputValue('');
   };
 
-  const onInputChange = () => {
-    setInputValue();
-  }
+  const onInputChange = (objet) => {
+    setInputValue(objet.city);
+    console.log(objet);
+  };
 
   return (
     <div className="app">

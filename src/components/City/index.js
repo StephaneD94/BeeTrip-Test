@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { useHistory, Link } from 'react-router-dom';
-// import axios from 'axios';
+import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 import './styles.css';
 
@@ -10,16 +9,10 @@ import Button from '@material-ui/core/Button';
 
 const City = ({ formSubmit, inputChange, input }) => {
     const history = useHistory();
-    /*const [temperature, setTemperature] = useState();*/
-
-    /*useEffect(() => {
-        const baseUrl = process.env.BASE_URL
-        const apiKey = process.env.API_KEY
-    })*/
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
-        formSubmit();
+        formSubmit(input);
         history.push("/weather");
     };
 
