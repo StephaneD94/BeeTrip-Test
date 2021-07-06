@@ -1,9 +1,8 @@
 // == Import npm
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 // == Import
-import reactLogo from './react-logo.svg';
 import './styles.css';
 
 import City from '../City';
